@@ -14,8 +14,11 @@ body {
   color: #333;
 }
 nav {
-  background-color: #222;
-  padding: 15px;
+    background-color: #222;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -36,8 +39,10 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline;
+    background-color: #444;
+    text-decoration: underline;
 }
+
 #home {
   min-height: 80vh;
 
@@ -53,7 +58,7 @@ nav a:hover {
 }
 
 #home h1 {
-  font-size: 50px;
+  font-size: 60px;
   margin-bottom: 10px;
 }
 
@@ -69,7 +74,7 @@ section {
 }
 
 section h2 {
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 25px;
 }
 
@@ -89,12 +94,7 @@ section ul {
 section li {
   margin-bottom: 8px;
 }
-#projects > div {
-  padding: 25px;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
+
 footer {
   text-align: center;
   padding: 25px;
@@ -105,6 +105,7 @@ footer {
   nav ul {
     flex-direction: column;
     align-items: center;
+  
   }
 
   nav li {
@@ -118,4 +119,83 @@ footer {
   section {
     padding: 50px 20px;
   }
+      .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.content-list {
+    margin-left: 25px;
+}
+
+.content-list li {
+    margin-bottom: 8px;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.hero-image {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 12px;
+    margin: 10px auto 25px;
+}
+form {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 12px 24px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #444;
 }
