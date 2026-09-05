@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+nav {
+    background-color: #222;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 5px 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #444;
+    text-decoration: underline;
+}
+
+#home {
+  min-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 40px 20px;
+}
+
+#home h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+#home h2 {
+  margin-bottom: 20px;
+}
+
+#home p {
+  max-width: 650px;
+}
+section {
+  padding: 70px 10%;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+section h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 15px;
+}
+section ul {
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+section li {
+  margin-bottom: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #222;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  nav li {
+    margin: 6px;
+  }
+
+  #home h1 {
+    font-size: 36px;
+  }
+
+  section {
+    padding: 50px 20px;
+  }
+      .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.content-list {
+    margin-left: 25px;
+}
+
+.content-list li {
+    margin-bottom: 8px;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.hero-image {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 12px;
+    margin: 10px auto 25px;
+}
+form {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 12px 24px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #444;
+}
