@@ -12,7 +12,9 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
+  background-color: #f5f5f5;
 }
+
 nav {
     background-color: #222;
     padding: 15px;
@@ -36,11 +38,13 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #444;
-    text-decoration: underline;
+  background-color: #444;
 }
 
 #home {
@@ -72,7 +76,10 @@ nav a:hover {
 section {
   padding: 70px 10%;
 }
-
+section h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
 section h2 {
   font-size: 36px;
   margin-bottom: 25px;
@@ -198,4 +205,25 @@ form button {
 
 form button:hover {
     background-color: #444;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.home-buttons a {
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-buttons a:hover {
+  background-color: #444;
+  transform: translateY(-2px);
 }
